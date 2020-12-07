@@ -1,0 +1,12 @@
+A = mat([[1,2],[3,4]]);
+B = mat([[3,4],[5,6]]);
+
+print("A = \n" + A);
+print("B = \n" + B);
+print("A+B = \n" + (A+B) );
+print("A-B = \n" + (A-B) );
+print("A*B = \n" + (A*B) );
+print("A*10 = \n" + (A*10) );
+print("A/B = \n" + (A/B) );
+print("A^(-1) = \n" + (A^(-1)));
+print("A' = \n" + A.T());
