@@ -1,23 +1,12 @@
-// Define Matrix A and B
-
 A = mat([[1,2],[3,4]]);
 B = mat([[3,4],[5,6]]);
 
-// Operator Overload examples
-print("A+B=\n" + (A+B));
-print("A-B=\n" + (A-B));
-print("A*B=\n" + (A*B));
-print("A/B=\n" + (A/B));
-print("A^3=\n" + (A^3));
-print("A^(-1)=\n" + (A^(-1)));
-print("A + [[1,1],[1,1]]=\n" + (A + [[1,1],[1,1]]));
-
-// If the right operands are scalar, operator will do element-wise operation (or "dot operation" in Matlab)
-print("A+1=\n" + (A+10));
-print("A-1=\n" + (A-10));
-print("A*3=\n" + (A*3));
-print("A/2=\n" + (A/2));
-
-// Compute matrix C from an expression
-let C = ( A.T()* B ) + ( B * 4 - A + 1 ) * ( B^(-1) );
-print("Matrix C (A'*B + (B*4 - A + 1) * (B^(-1)) is\n" + C);
+print("A = \n" + A);
+print("B = \n" + B);
+print("A+B = \n" + (A+B) );
+print("A-B = \n" + (A-B) );
+print("A*B = \n" + (A*B) );
+print("A*10 = \n" + (A*10) );
+print("A/B = \n" + (A/B) );
+print("A^(-1) = \n" + (A^(-1)));
+print("A' = \n" + A.T());
