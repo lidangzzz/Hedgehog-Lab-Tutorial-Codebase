@@ -1,11 +1,13 @@
-tex(`\\text{The input matrix } A: `)
-A = mat([[7,2],[2,1]]);         // Define Matrix A
-formulaTex`A=${A}`
+// Define Matrix A
+A = mat([[7,2],[2,1]]);         
+print("A = \n" + A)
 
-tex(`\\text{The Cholesky decomposition result } L: `)
-L = chol(A).L;  L.digits = 5;   //  Calculate L and keep 5 digits
-formulaTex`L=${L}`
+//  Calculate L and keep 5 digits
+L = chol(A).L;  
+L.digits = 5;   
+print("L = \n" + L)
 
-tex(`\\text{Let's verify the result by calculating } LL^{T}: `)
-A_ = L*L.T();   A_.digits = 5;   // Verify the result
-formulaTex`LL^{T}=${A_}`
+// Verify L by calculating L*L'
+A_ = L * L.T(); 
+A_.digits = 5;
+print("L*L' = \n" + A_)
